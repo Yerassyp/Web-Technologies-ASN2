@@ -3,123 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+    <title>Assignment 2 - Flexbox and Grid</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="main-header">
-        <h1>Yerassyl Irangait</h1>
-        <h2>Course: Web Technologies 1</h2>
+    <header class="site-header">
+        <div class="logo">Yerassyl Irangait</div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#grid-layout">Grid Layout</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="site-nav">
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#websites">Favorite Websites</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#mood">Mood</a></li>
-            <li><a href="#contact">Contact Form</a></li>
-        </ul>
-    </nav>
 
-    <main class="content-container">
+    <main>
 
-        <section id="about-me" class="info-section">
-            <h3>About Me</h3>
-            <img src="images/avatar.jpg" alt="Profile photo of Yerassyl Irangait" class="avatar-img">
-            <p>
-                Hello! My name is Yerassyl Irangait. I am a student taking the Web Technologies 1 course. 
-                Welcome to my first personal webpage created using HTML and CSS.
-            </p>
-            <button type="button" class="btn-primary">Click Me</button>
-        </section>
+        <section id="cards" class="section">
+            <h1>My Interests</h1>
 
-        <section id="hobbies" class="info-section">
-            <h3>My Hobbies</h3>
-            <ol class="styled-list">
-                <li>Volleyball</li>
-                <li>Playing Video Games</li>
-                <li>Watching Movies, Anime, TV Shows</li>
-            </ol>
-        </section>
+            <div class="card-container">
 
-        <section id="websites" class="info-section">
-            <h3>Favorite Websites</h3>
-            <ul class="styled-list">
-                <li>
-                    <a href="https://old.yummyani.me/" target="_blank" rel="noopener noreferrer">Website for watching anime</a>
-                </li>
-                <li>
-                    <a href="https://lms.astanait.edu.kz" target="_blank" rel="noopener noreferrer">Moodle AITU</a>
-                </li>
-                <li>
-                    <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer">Social media platform</a>
-                </li>
-            </ul>
-        </section>
-
-        <section id="schedule" class="info-section">
-            <h3>Class Schedule</h3>
-            <table class="schedule-table">
-                <thead>
-                    <tr>
-                        <th>Subject</th>
-                        <th>Day</th>
-                        <th>Time</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Web Technologies 1</td>
-                        <td>Friday</td>
-                        <td>14:00 - 15:50</td>
-                    </tr>
-                    <tr>
-                        <td>Software Design Patterns</td>
-                        <td>Friday</td>
-                        <td>16:00 - 17:50</td>
-                    </tr>
-                    <tr>
-                        <td>Operating Systems</td>
-                        <td>Tuesday</td>
-                        <td>18:00 - 19:50</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="mood" class="info-section">
-            <h3>My Current Mood</h3>
-            <p>
-                Today I am feeling motivated 🚀, fully focused on writing code 💻, and optimistic about learning new technologies ✨!
-            </p>
-        </section>
-
-        <section id="contact" class="info-section">
-            <h3>Contact Form</h3>
-            <form action="#" method="post" class="contact-form">
-                <div class="form-group">
-                    <label for="user-name">Name:</label>
-                    <input type="text" id="user-name" name="user_name" placeholder="Enter your full name" required>
+                <div class="card">
+                    <img src="images/image1.jpg" alt="Volleyball">
+                    <div class="card-content">
+                        <h2>Volleyball</h2>
+                        <p>
+                            Volleyball is one of my favorite sports.
+                            I enjoy playing it with my friends.
+                        </p>
+                        <button>Read More</button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="user-email">Email:</label>
-                    <input type="email" id="user-email" name="user_email" placeholder="Enter your email address" required>
+
+                <div class="card">
+                    <img src="images/image2.jpg" alt="Video games">
+                    <div class="card-content">
+                        <h2>Video Games</h2>
+                        <p>
+                            I like playing video games in my free time.
+                            It is one of my main hobbies.
+                        </p>
+                        <button>Read More</button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="fav-color">Favorite Color:</label>
-                    <input type="color" id="fav-color" name="favorite_color" value="#000000" class="color-picker">
+
+                <div class="card">
+                    <img src="images/image3.jpg" alt="Movies and anime">
+                    <div class="card-content">
+                        <h2>Movies and Anime</h2>
+                        <p>
+                            I enjoy watching movies, TV shows and anime
+                            when I have free time.
+                        </p>
+                        <button>Read More</button>
+                    </div>
                 </div>
-                <button type="submit" class="btn-primary">Submit</button>
-            </form>
+
+            </div>
+        </section>
+
+
+        <section id="grid-layout" class="section">
+            <h1>Grid Page Layout</h1>
+
+            <div class="grid-page">
+
+                <header class="grid-header">
+                    Header
+                </header>
+
+                <aside class="grid-sidebar">
+                    <h2>Sidebar</h2>
+                    <p>Navigation or additional information can be placed here.</p>
+                </aside>
+
+                <div class="grid-main">
+                    <h2>Main Content</h2>
+                    <p>
+                        This section demonstrates a page layout created
+                        with CSS Grid Areas.
+                    </p>
+                </div>
+
+                <footer class="grid-footer">
+                    Footer
+                </footer>
+
+            </div>
+        </section>
+
+
+        <section id="gallery" class="section">
+            <h1>Image Gallery</h1>
+
+            <div class="gallery">
+
+                <div class="gallery-item">
+                    <img src="images/image1.jpg" alt="Gallery image 1">
+                    <div class="caption">Image 1</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image2.jpg" alt="Gallery image 2">
+                    <div class="caption">Image 2</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image3.jpg" alt="Gallery image 3">
+                    <div class="caption">Image 3</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image4.jpg" alt="Gallery image 4">
+                    <div class="caption">Image 4</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image5.jpg" alt="Gallery image 5">
+                    <div class="caption">Image 5</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image6.jpg" alt="Gallery image 6">
+                    <div class="caption">Image 6</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image7.jpg" alt="Gallery image 7">
+                    <div class="caption">Image 7</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image8.jpg" alt="Gallery image 8">
+                    <div class="caption">Image 8</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image9.jpg" alt="Gallery image 9">
+                    <div class="caption">Image 9</div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="portfolio" class="section">
+            <h1>Portfolio</h1>
+
+            <div class="portfolio-grid">
+
+                <div class="projects">
+
+                    <div class="project-card">
+                        <h2>Assignment 1</h2>
+
+                        <p>
+                            My first webpage created using HTML and CSS.
+                        </p>
+
+                        <button>View Project</button>
+                    </div>
+
+                    <div class="project-card">
+                        <h2>Assignment 2</h2>
+
+                        <p>
+                            A webpage demonstrating Flexbox and CSS Grid.
+                        </p>
+
+                        <button>View Project</button>
+                    </div>
+
+                </div>
+
+
+                <aside class="portfolio-info">
+                    <h2>About Me</h2>
+
+                    <p>
+                        My name is Yerassyl Irangait.
+                        I am a student in group SE-2523.
+                    </p>
+
+                    <p>
+                        Course: Web Technologies 1
+                    </p>
+                </aside>
+
+            </div>
         </section>
 
     </main>
 
-    <footer class="main-footer">
-        <p>&copy; 2026 Yerassyl Irangait. All rights reserved.</p>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Yerassyl Irangait</p>
     </footer>
 
 </body>
